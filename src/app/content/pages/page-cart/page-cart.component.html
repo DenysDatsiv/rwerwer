@@ -1,0 +1,10 @@
+<div  class="cart-wrapper">
+<div class="product-list" *ngIf="cartProducts$ | async as cartProducts">
+    <div *ngFor="let product of cartProducts" class="cart-cards">
+        <app-cart-summary-card [product]="product"/>
+    </div>
+</div>
+<div class="order-form">
+    <app-summary-order-card [totalSuma]="cartTotal" [totalCartItem]="totalCartItem" />
+</div>
+</div>

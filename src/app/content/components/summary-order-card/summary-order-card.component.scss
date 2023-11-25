@@ -1,0 +1,56 @@
+.bill-information {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bill-action-wrapper {
+  justify-content: center;
+}
+
+.bill-information {
+  padding: 0 20px;
+}
+
+.bill-amount {
+  margin-bottom: 10px;
+}
+
+.total-bill-card {
+  margin-top: 10px;
+  background-color: #c2c2c2;
+}
+
+.bill-order-btn {
+  width: 100%;
+  background-color: green !important;
+}
+
+.bill-amount {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 29px;
+  width: 100%;
+  color: #0c061a;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.bill-action-wrapper {
+  justify-content: center;
+}
+
+.bill-order-btn {
+  width: 100%;
+  background-color: green !important;
+}
+
+@media screen and (min-width: 992px) {
+  .total-bill-card {
+    width: 25vw;
+    margin-right: 20px;
+  }
+}
+
+

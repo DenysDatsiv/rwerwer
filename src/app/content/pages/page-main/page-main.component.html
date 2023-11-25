@@ -1,0 +1,14 @@
+<div *ngIf="loading$ | async"><mat-spinner class="loading-spinner"/></div>
+<!--<div *ngIf="error$ | async as error">Error: {{ error }}</div>-->
+
+<div *ngIf="(products$ | async) as products">
+    <app-product-list [products]="products" />
+    <mat-paginator
+            [length]="products.length"
+            [pageSize]="pageSize"
+            [pageSizeOptions]="[10]"
+            (page)="onPageChange($event)"
+            #paginator
+            aria-label="Select page"
+    ></mat-paginator>
+</div>
